@@ -1,6 +1,6 @@
 //
 //  MainViewControllerModel.swift
-//  design_pattern_MVVM
+//  design_pattern_MVCVM
 //
 //  Created by Peter de Vroomen on 28/06/2024.
 //
@@ -44,7 +44,6 @@ class MainViewControllerModel: MainViewControllerModelProtocol {
     
     // MARK: - Private
     
-    private let model = MainViewModel()
     private var viewUpdate: ((MainViewControllerModel.ViewUpdate)->())!
     
     // MARK: - Lifecyle
@@ -88,18 +87,18 @@ class MainViewControllerModel: MainViewControllerModelProtocol {
     
     private func setupInitialViewItems() {
         
-        viewUpdate(.title(model.title))
+        viewUpdate(.title("MainViewController"))
         
-        viewUpdate(.titleLabel(model.titleLabel))
+        viewUpdate(.titleLabel("Main View"))
         
-        viewUpdate(.pushVCLabel(model.pushVCLabel))
-        viewUpdate(.firstPushVCButtonLabel(model.firstPushVCButtonLabel))
-        viewUpdate(.secondPushVCButtonLabel(model.secondPushVCButtonLabel))
-        viewUpdate(.thirdPushVCButtonLabel(model.thirdPushVCButtonLabel))
+        viewUpdate(.pushVCLabel("Push ViewController on current NavigationController"))
+        viewUpdate(.firstPushVCButtonLabel("First ViewController"))
+        viewUpdate(.secondPushVCButtonLabel("Second ViewController"))
+        viewUpdate(.thirdPushVCButtonLabel("Third ViewController"))
 
-        viewUpdate(.presentWithNCLabel(model.presentWithNCLabel))
-        viewUpdate(.firstPresentWithNCButtonLabel(model.firstPresentWithNCButtonLabel))
-        viewUpdate(.secondPresentWithNCButtonLabel(model.secondPresentWithNCButtonLabel))
-        viewUpdate(.thirdPresentWithNCButtonLabel(model.thirdPresentWithNCButtonLabel))
+        viewUpdate(.presentWithNCLabel("Present ViewController on new NavigationController"))
+        viewUpdate(.firstPresentWithNCButtonLabel("First ViewController"))
+        viewUpdate(.secondPresentWithNCButtonLabel("Second ViewController"))
+        viewUpdate(.thirdPresentWithNCButtonLabel("Third ViewController"))
     }
 }

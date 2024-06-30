@@ -27,6 +27,7 @@ class SecondViewControllerModel: SecondViewControllerModelProtocol {
     
     // MARK: - Private
     
+    private let model = SecondViewModel()
     private var viewUpdate: ((ViewUpdate)->())!
     
     // MARK: - Lifecyle
@@ -49,10 +50,10 @@ class SecondViewControllerModel: SecondViewControllerModelProtocol {
 
     private func setupInitialViewItems() {
         
-        viewUpdate(.title("SecondViewController"))
+        viewUpdate(.title(model.title))
         
-        viewUpdate(.titleLabel("Second View"))
+        viewUpdate(.titleLabel(model.titleLabel))
 
-        viewUpdate(.firstButtonLabel("Third ViewController"))
+        viewUpdate(.firstButtonLabel(model.firstButtonLabel))
     }
 }

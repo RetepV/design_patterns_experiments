@@ -1,6 +1,6 @@
 //
-//  ThirdViewControllerModel.swift
-//  design_pattern_MVVM
+//  SecondViewControllerModel.swift
+//  design_pattern_MVCVM
 //
 //  Created by Peter de Vroomen on 28/06/2024.
 //
@@ -8,22 +8,25 @@
 import Foundation
 import UIKit
 
-protocol ThirdViewControllerModelProtocol {
+protocol SecondViewControllerModelProtocol {
     func viewDidLoad()
+    
+    func firstButtonTapped()
 }
 
-class ThirdViewControllerModel: ThirdViewControllerModelProtocol {
+class SecondViewControllerModel: SecondViewControllerModelProtocol {
 
     // MARK: - View updates
     
     enum ViewUpdate {
         case title(String)
         case titleLabel(String)
+        case firstButtonLabel(String)
+        case pushViewController(UIViewController)
     }
     
     // MARK: - Private
     
-    private let model = ThirdViewModel()
     private var viewUpdate: ((ViewUpdate)->())!
     
     // MARK: - Lifecyle
@@ -38,12 +41,18 @@ class ThirdViewControllerModel: ThirdViewControllerModelProtocol {
         setupInitialViewItems()
     }
     
+    func firstButtonTapped() {
+        viewUpdate(.pushViewController(ThirdViewController.instantiate()))
+    }
+    
     // MARK: - Private
 
     private func setupInitialViewItems() {
         
-        viewUpdate(.title(model.title))
+        viewUpdate(.title("SecondViewController"))
         
-        viewUpdate(.titleLabel(model.titleLabel))
+        viewUpdate(.titleLabel("Second View"))
+
+        viewUpdate(.firstButtonLabel("Third ViewController"))
     }
 }

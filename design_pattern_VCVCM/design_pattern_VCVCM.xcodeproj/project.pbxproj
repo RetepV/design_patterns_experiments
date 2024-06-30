@@ -7,10 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		055B8BDE2C31F3420068D6F7 /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 055B8BDD2C31F33B0068D6F7 /* MainViewModel.swift */; };
-		055B8BE02C31F4350068D6F7 /* FirstViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 055B8BDF2C31F4350068D6F7 /* FirstViewModel.swift */; };
-		055B8BE22C31F4BB0068D6F7 /* SecondViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 055B8BE12C31F4BB0068D6F7 /* SecondViewModel.swift */; };
-		055B8BE42C31F4FB0068D6F7 /* ThirdViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 055B8BE32C31F4FB0068D6F7 /* ThirdViewModel.swift */; };
 		0585B5BF2C2F062D0093F9C2 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0585B5BB2C2F062D0093F9C2 /* SecondViewController.swift */; };
 		0585B5C02C2F062D0093F9C2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0585B5B02C2F062D0093F9C2 /* SceneDelegate.swift */; };
 		0585B5C12C2F062D0093F9C2 /* ThirdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0585B5BC2C2F062D0093F9C2 /* ThirdViewController.swift */; };
@@ -27,10 +23,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		055B8BDD2C31F33B0068D6F7 /* MainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewModel.swift; sourceTree = "<group>"; };
-		055B8BDF2C31F4350068D6F7 /* FirstViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewModel.swift; sourceTree = "<group>"; };
-		055B8BE12C31F4BB0068D6F7 /* SecondViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewModel.swift; sourceTree = "<group>"; };
-		055B8BE32C31F4FB0068D6F7 /* ThirdViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdViewModel.swift; sourceTree = "<group>"; };
 		0585B5AF2C2F062D0093F9C2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0585B5B02C2F062D0093F9C2 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		0585B5B22C2F062D0093F9C2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -45,7 +37,7 @@
 		0585B5CE2C2F076E0093F9C2 /* FirstViewControllerModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewControllerModel.swift; sourceTree = "<group>"; };
 		05B782342C2F63980015B2A1 /* SecondViewControllerModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewControllerModel.swift; sourceTree = "<group>"; };
 		05B782362C2F64990015B2A1 /* ThirdViewControllerModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdViewControllerModel.swift; sourceTree = "<group>"; };
-		05CA74832C2ED9860005D99B /* design_pattern_MVVM.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = design_pattern_MVVM.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		05CA74832C2ED9860005D99B /* design_pattern_VCVCM.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = design_pattern_VCVCM.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,20 +82,19 @@
 			path = ViewControllers;
 			sourceTree = "<group>";
 		};
-		0585B5BE2C2F062D0093F9C2 /* design_pattern_MVVM */ = {
+		0585B5BE2C2F062D0093F9C2 /* design_pattern_VCVCM */ = {
 			isa = PBXGroup;
 			children = (
 				0585B5B12C2F062D0093F9C2 /* AppLifecycle */,
 				0585B5B62C2F062D0093F9C2 /* Resources */,
 				0585B5BD2C2F062D0093F9C2 /* ViewControllers */,
 			);
-			path = design_pattern_MVVM;
+			path = design_pattern_VCVCM;
 			sourceTree = "<group>";
 		};
 		0585B5C92C2F068B0093F9C2 /* Main */ = {
 			isa = PBXGroup;
 			children = (
-				055B8BDD2C31F33B0068D6F7 /* MainViewModel.swift */,
 				0585B5BA2C2F062D0093F9C2 /* MainViewController.swift */,
 				0585B5CB2C2F06B10093F9C2 /* MainViewControllerModel.swift */,
 			);
@@ -113,7 +104,6 @@
 		0585B5CD2C2F075A0093F9C2 /* First */ = {
 			isa = PBXGroup;
 			children = (
-				055B8BDF2C31F4350068D6F7 /* FirstViewModel.swift */,
 				0585B5B72C2F062D0093F9C2 /* FirstViewController.swift */,
 				0585B5CE2C2F076E0093F9C2 /* FirstViewControllerModel.swift */,
 			);
@@ -123,7 +113,6 @@
 		05B782322C2F63700015B2A1 /* Second */ = {
 			isa = PBXGroup;
 			children = (
-				055B8BE12C31F4BB0068D6F7 /* SecondViewModel.swift */,
 				0585B5BB2C2F062D0093F9C2 /* SecondViewController.swift */,
 				05B782342C2F63980015B2A1 /* SecondViewControllerModel.swift */,
 			);
@@ -133,7 +122,6 @@
 		05B782332C2F63770015B2A1 /* Third */ = {
 			isa = PBXGroup;
 			children = (
-				055B8BE32C31F4FB0068D6F7 /* ThirdViewModel.swift */,
 				0585B5BC2C2F062D0093F9C2 /* ThirdViewController.swift */,
 				05B782362C2F64990015B2A1 /* ThirdViewControllerModel.swift */,
 			);
@@ -143,7 +131,7 @@
 		05CA747A2C2ED9860005D99B = {
 			isa = PBXGroup;
 			children = (
-				0585B5BE2C2F062D0093F9C2 /* design_pattern_MVVM */,
+				0585B5BE2C2F062D0093F9C2 /* design_pattern_VCVCM */,
 				05CA74842C2ED9860005D99B /* Products */,
 			);
 			sourceTree = "<group>";
@@ -151,7 +139,7 @@
 		05CA74842C2ED9860005D99B /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				05CA74832C2ED9860005D99B /* design_pattern_MVVM.app */,
+				05CA74832C2ED9860005D99B /* design_pattern_VCVCM.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -159,9 +147,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		05CA74822C2ED9860005D99B /* design_pattern_MVVM */ = {
+		05CA74822C2ED9860005D99B /* design_pattern_VCVCM */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 05CA74972C2ED9890005D99B /* Build configuration list for PBXNativeTarget "design_pattern_MVVM" */;
+			buildConfigurationList = 05CA74972C2ED9890005D99B /* Build configuration list for PBXNativeTarget "design_pattern_VCVCM" */;
 			buildPhases = (
 				05CA747F2C2ED9860005D99B /* Sources */,
 				05CA74802C2ED9860005D99B /* Frameworks */,
@@ -171,9 +159,9 @@
 			);
 			dependencies = (
 			);
-			name = design_pattern_MVVM;
+			name = design_pattern_VCVCM;
 			productName = design_pattern_MVC;
-			productReference = 05CA74832C2ED9860005D99B /* design_pattern_MVVM.app */;
+			productReference = 05CA74832C2ED9860005D99B /* design_pattern_VCVCM.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -191,7 +179,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 05CA747E2C2ED9860005D99B /* Build configuration list for PBXProject "design_pattern_MVVM" */;
+			buildConfigurationList = 05CA747E2C2ED9860005D99B /* Build configuration list for PBXProject "design_pattern_VCVCM" */;
 			compatibilityVersion = "Xcode 15.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -204,7 +192,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				05CA74822C2ED9860005D99B /* design_pattern_MVVM */,
+				05CA74822C2ED9860005D99B /* design_pattern_VCVCM */,
 			);
 		};
 /* End PBXProject section */
@@ -233,14 +221,10 @@
 				05B782352C2F63980015B2A1 /* SecondViewControllerModel.swift in Sources */,
 				0585B5C02C2F062D0093F9C2 /* SceneDelegate.swift in Sources */,
 				0585B5C12C2F062D0093F9C2 /* ThirdViewController.swift in Sources */,
-				055B8BE22C31F4BB0068D6F7 /* SecondViewModel.swift in Sources */,
 				0585B5C22C2F062D0093F9C2 /* AppDelegate.swift in Sources */,
-				055B8BE02C31F4350068D6F7 /* FirstViewModel.swift in Sources */,
 				0585B5C32C2F062D0093F9C2 /* FirstViewController.swift in Sources */,
-				055B8BE42C31F4FB0068D6F7 /* ThirdViewModel.swift in Sources */,
 				05B782372C2F64990015B2A1 /* ThirdViewControllerModel.swift in Sources */,
 				0585B5C42C2F062D0093F9C2 /* MainViewController.swift in Sources */,
-				055B8BDE2C31F3420068D6F7 /* MainViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -393,7 +377,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = design_pattern_MVVM/Resources/Info.plist;
+				INFOPLIST_FILE = design_pattern_VCVCM/Resources/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -404,7 +388,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.retepv.design-pattern-MVVM";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.retepv.design-pattern-VCVCM";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -420,7 +404,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = design_pattern_MVVM/Resources/Info.plist;
+				INFOPLIST_FILE = design_pattern_VCVCM/Resources/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -431,7 +415,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.retepv.design-pattern-MVVM";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.retepv.design-pattern-VCVCM";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -442,7 +426,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		05CA747E2C2ED9860005D99B /* Build configuration list for PBXProject "design_pattern_MVVM" */ = {
+		05CA747E2C2ED9860005D99B /* Build configuration list for PBXProject "design_pattern_VCVCM" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				05CA74952C2ED9890005D99B /* Debug */,
@@ -451,7 +435,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		05CA74972C2ED9890005D99B /* Build configuration list for PBXNativeTarget "design_pattern_MVVM" */ = {
+		05CA74972C2ED9890005D99B /* Build configuration list for PBXNativeTarget "design_pattern_VCVCM" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				05CA74982C2ED9890005D99B /* Debug */,

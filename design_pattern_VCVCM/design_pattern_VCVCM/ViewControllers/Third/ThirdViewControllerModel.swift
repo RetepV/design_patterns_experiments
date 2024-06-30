@@ -1,6 +1,6 @@
 //
 //  ThirdViewControllerModel.swift
-//  design_pattern_MVVM
+//  design_pattern_MVCVM
 //
 //  Created by Peter de Vroomen on 28/06/2024.
 //
@@ -23,7 +23,6 @@ class ThirdViewControllerModel: ThirdViewControllerModelProtocol {
     
     // MARK: - Private
     
-    private let model = ThirdViewModel()
     private var viewUpdate: ((ViewUpdate)->())!
     
     // MARK: - Lifecyle
@@ -42,8 +41,8 @@ class ThirdViewControllerModel: ThirdViewControllerModelProtocol {
 
     private func setupInitialViewItems() {
         
-        viewUpdate(.title(model.title))
+        viewUpdate(.title("ThirdViewController"))
         
-        viewUpdate(.titleLabel(model.titleLabel))
+        viewUpdate(.titleLabel("Third View"))
     }
 }

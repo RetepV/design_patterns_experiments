@@ -1,6 +1,6 @@
 //
 //  FirstViewControllerModel.swift
-//  design_pattern_MVVM
+//  design_pattern_MVCVM
 //
 //  Created by Peter de Vroomen on 28/06/2024.
 //
@@ -29,7 +29,6 @@ class FirstViewControllerModel: FirstViewControllerModelProtocol {
     
     // MARK: - Private
     
-    private let model = FirstViewModel()
     private var viewUpdate: ((ViewUpdate)->())!
     
     // MARK: - Lifecyle
@@ -56,11 +55,12 @@ class FirstViewControllerModel: FirstViewControllerModelProtocol {
 
     private func setupInitialViewItems() {
         
-        viewUpdate(.title(model.title))
+        viewUpdate(.title("FirstViewController"))
         
-        viewUpdate(.titleLabel(model.titleLabel))
+        viewUpdate(.titleLabel("First View"))
 
-        viewUpdate(.firstButtonLabel(model.firstButtonLabel))
-        viewUpdate(.secondButtonLabel(model.secondButtonLabel))
+        viewUpdate(.firstButtonLabel("Second ViewController"))
+        viewUpdate(.secondButtonLabel("Third ViewController"))
     }
+
 }
