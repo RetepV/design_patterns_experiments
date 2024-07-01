@@ -62,7 +62,7 @@ extension MainView {
     }
     
     @Observable
-    class ViewModel: @preconcurrency ViewModelProtocol {
+    class ViewModel: ViewModelProtocol {
         
         // MARK: - Constants
         
@@ -104,19 +104,22 @@ extension MainView {
             ThirdView()
         }
 
-        @MainActor
         func firstPresentWithNCButtonTapped(coordinator: SheetCoordinator<PresentableSheets>) {
-            coordinator.presentSheet(.firstView)
+            Task {
+                await coordinator.presentSheet(.firstView)
+            }
         }
         
-        @MainActor
         func secondPresentWithNCButtonTapped(coordinator: SheetCoordinator<PresentableSheets>) {
-            coordinator.presentSheet(.secondView)
+            Task {
+                await coordinator.presentSheet(.secondView)
+            }
         }
         
-        @MainActor
         func thirdPresentWithNCButtonTapped(coordinator: SheetCoordinator<PresentableSheets>) {
-            coordinator.presentSheet(.thirdView)
+            Task {
+                await coordinator.presentSheet(.thirdView)
+            }
         }
         
         // MARK: - State updates

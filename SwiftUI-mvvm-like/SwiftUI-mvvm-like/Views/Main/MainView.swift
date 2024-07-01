@@ -49,12 +49,12 @@ struct MainView: View {
                 Spacer()
                     .frame(height:16)
                 Button(model.secondPresentWithNCButtonLabel) {
-                    sheetCoordinator.presentSheet(.secondView)
+                    model.secondPresentWithNCButtonTapped(coordinator: sheetCoordinator)
                 }
                 Spacer()
                     .frame(height:16)
                 Button(model.thirdPresentWithNCButtonLabel) {
-                    sheetCoordinator.presentSheet(.thirdView)
+                    model.thirdPresentWithNCButtonTapped(coordinator: sheetCoordinator)
                 }
 
                 Spacer()
