@@ -19,6 +19,7 @@ protocol SheetEnum: Identifiable {
 }
 
 final class SheetCoordinator<Sheet: SheetEnum>: ObservableObject {
+    
     @Published var currentSheet: Sheet?
     private var sheetStack: [Sheet] = []
 

@@ -44,7 +44,7 @@ struct MainView: View {
                     .frame(height:64)
 
                 Button(model.firstPresentWithNCButtonLabel) {
-                    sheetCoordinator.presentSheet(.firstView)
+                    model.firstPresentWithNCButtonTapped(coordinator: sheetCoordinator)
                 }
                 Spacer()
                     .frame(height:16)
@@ -61,19 +61,19 @@ struct MainView: View {
                     .frame(height: 64)
                 
                 VStack {
-                    Text("People: \(model.numberOfPeople)")
+                    Text("\(model.peopleLabel) \(model.numberOfPeople)")
                     
                     HStack {
                         Spacer()
-                        Button("DEC", action: model.decrementPeople)
+                        Button(model.decButtonLabel, action: model.decrementPeople)
                         Spacer()
-                        Button("INC", action: model.incrementPeople)
+                        Button(model.incButtonLabel, action: model.incrementPeople)
                         Spacer()
                     }
                     
                     HStack {
-                        Text("Enter number of people: ")
-                        TextField("Amount", value: $model.numberOfPeople, format: .number)
+                        Text(model.enterNumberOfPeopleLabel)
+                        TextField(model.amountLabel, value: $model.numberOfPeople, format: .number)
                             .multilineTextAlignment(.center)
                     }
                 }
