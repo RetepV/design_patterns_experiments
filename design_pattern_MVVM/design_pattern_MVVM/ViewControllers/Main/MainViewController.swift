@@ -27,6 +27,11 @@ class MainViewController: UIViewController {
     @IBOutlet private weak var secondPresentWithNCButton: UIButton!
     @IBOutlet private weak var thirdPresentWithNCButton: UIButton!
     
+    @IBOutlet weak var numberOfPeopleLabel: UILabel!
+    @IBOutlet weak var decButton: UIButton!
+    @IBOutlet weak var incButon: UIButton!
+    @IBOutlet weak var numberOfPeopleInput: UITextField!
+    
     // MARK: - Lifecycle
     
     // MARK: - Lifecycle
@@ -42,6 +47,9 @@ class MainViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        let tap = UITapGestureRecognizer(target: self, action: #selector(dismissKeyboard))
+        view.addGestureRecognizer(tap)
         
         viewModel?.viewDidLoad()
     }
@@ -78,6 +86,11 @@ class MainViewController: UIViewController {
             navigationController?.pushViewController(viewController, animated: true)
         case .presentViewController(let viewController):
             present(viewController, animated: true)
+            
+        case .numberOfPeopleLabel(let string):
+            numberOfPeopleLabel.text = string
+        case .numberOfPeopleInput(let string):
+            numberOfPeopleInput.text = string
         }
     }
     
@@ -105,6 +118,38 @@ class MainViewController: UIViewController {
     
     @IBAction func thirdPresentWithNCButtonTapped(_ sender: UIButton) {
         viewModel?.thirdPresentWithNCButtonTapped()
+    }
+    
+    @IBAction func decButtonTapped(_ sender: UIButton) {
+        viewModel?.decButtonTapped()
+    }
+    
+    @IBAction func incButtonTapped(_ sender: UIButton) {
+        viewModel?.incButtonTapped()
+    }
+    
+    @IBAction func numberOfPeopleEditingDidEnd(_ sender: Any) {
+        if let sender = sender as? UITextField,
+            sender == numberOfPeopleInput {
+            if let text = sender.text,
+               let number = Int(text) {
+                viewModel?.updateNumberOfPeople(number)
+            }
+        }
+    }
+    
+    @IBAction func numberOfPeopleDidChange(_ sender: Any) {
+        if let sender = sender as? UITextField,
+            sender == numberOfPeopleInput {
+            if let text = sender.text,
+               let number = Int(text) {
+                viewModel?.updateNumberOfPeople(number)
+            }
+        }
+    }
+    
+    @objc func dismissKeyboard() {
+        view.endEditing(true)
     }
 }
 

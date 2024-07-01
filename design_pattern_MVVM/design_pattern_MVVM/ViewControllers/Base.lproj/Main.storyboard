@@ -17,7 +17,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cw9-dI-qJ0">
-                                <rect key="frame" x="150.66666666666666" y="103" width="92" height="43"/>
+                                <rect key="frame" x="151" y="103" width="91.333333333333314" height="43"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="36"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -29,7 +29,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kCi-Wm-Uk5" userLabel="First Push VC Button">
-                                <rect key="frame" x="159" y="190.33333333333334" width="75" height="35"/>
+                                <rect key="frame" x="159" y="190.33333333333334" width="75" height="34.333333333333343"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Button"/>
                                 <connections>
@@ -37,7 +37,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hvl-x5-OeY" userLabel="Second Push VC Button">
-                                <rect key="frame" x="159" y="233.33333333333334" width="75" height="35.000000000000028"/>
+                                <rect key="frame" x="159" y="232.66666666666666" width="75" height="34.333333333333343"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Button"/>
                                 <connections>
@@ -45,7 +45,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hnD-gs-CyC" userLabel="Third Push VC Button">
-                                <rect key="frame" x="159" y="276.33333333333331" width="75" height="35"/>
+                                <rect key="frame" x="159" y="275" width="75" height="34.333333333333314"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Button"/>
                                 <connections>
@@ -53,13 +53,13 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6L8-Ac-O7q" userLabel="Present with NC Label">
-                                <rect key="frame" x="16.000000000000004" y="327.33333333333331" width="41.333333333333343" height="20.333333333333314"/>
+                                <rect key="frame" x="16.000000000000004" y="325.33333333333331" width="41.333333333333343" height="20.333333333333314"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b2U-8w-DwR" userLabel="First Present with NC Button">
-                                <rect key="frame" x="159" y="355.66666666666669" width="75" height="35"/>
+                                <rect key="frame" x="159" y="353.66666666666669" width="75" height="34.333333333333314"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Button"/>
                                 <connections>
@@ -67,7 +67,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ITy-Kd-mrj" userLabel="Second Present with NC Button">
-                                <rect key="frame" x="159" y="398.66666666666669" width="75" height="35"/>
+                                <rect key="frame" x="159" y="396" width="75" height="34.333333333333314"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Button"/>
                                 <connections>
@@ -75,13 +75,65 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zB4-lQ-vCT" userLabel="Third Present with NC Button">
-                                <rect key="frame" x="159" y="441.66666666666669" width="75" height="35"/>
+                                <rect key="frame" x="159" y="438.33333333333331" width="75" height="34.333333333333314"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Button"/>
                                 <connections>
                                     <action selector="thirdPresentWithNCButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="guW-c4-m8b"/>
                                 </connections>
                             </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="uZv-uu-4o9">
+                                <rect key="frame" x="0.0" y="504.66666666666669" width="393" height="88.666666666666686"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="People: X" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LTE-G5-pXz">
+                                        <rect key="frame" x="0.0" y="0.0" width="393" height="20.333333333333332"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HRe-d9-6KV">
+                                        <rect key="frame" x="0.0" y="20.333333333333318" width="393" height="34.333333333333343"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tBz-tK-N4z">
+                                                <rect key="frame" x="0.0" y="0.0" width="196.66666666666666" height="34.333333333333336"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="DEC"/>
+                                                <connections>
+                                                    <action selector="decButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="j7i-OE-VZU"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zo0-cK-w7q">
+                                                <rect key="frame" x="196.66666666666663" y="0.0" width="196.33333333333337" height="34.333333333333336"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="INC"/>
+                                                <connections>
+                                                    <action selector="incButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Rou-as-94k"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="kOE-0q-Rip">
+                                        <rect key="frame" x="0.0" y="54.666666666666686" width="393" height="34"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Enter number of people:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sr1-Z8-p9e">
+                                                <rect key="frame" x="0.0" y="0.0" width="196.66666666666666" height="34"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="qiD-aK-VCZ">
+                                                <rect key="frame" x="196.66666666666663" y="0.0" width="196.33333333333337" height="34"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                                <connections>
+                                                    <action selector="numberOfPeopleDidChange:" destination="BYZ-38-t0r" eventType="editingChanged" id="Xkk-uq-tj8"/>
+                                                    <action selector="numberOfPeopleEditingDidEnd:" destination="BYZ-38-t0r" eventType="editingDidEnd" id="SK0-wB-Rg4"/>
+                                                </connections>
+                                            </textField>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -91,7 +143,9 @@
                             <constraint firstItem="6oW-J1-yTH" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="5QE-kZ-YCB"/>
                             <constraint firstItem="6L8-Ac-O7q" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="CIy-ht-z3l"/>
                             <constraint firstItem="b2U-8w-DwR" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="Fda-Yb-J1e"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="uZv-uu-4o9" secondAttribute="trailing" id="Giq-5Y-gXh"/>
                             <constraint firstItem="kCi-Wm-Uk5" firstAttribute="top" secondItem="6oW-J1-yTH" secondAttribute="bottom" constant="8" id="J3T-Cr-oaj"/>
+                            <constraint firstItem="uZv-uu-4o9" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Kxp-c4-8Iw"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="6L8-Ac-O7q" secondAttribute="trailing" symbolic="YES" id="MVK-QD-5PN"/>
                             <constraint firstItem="6oW-J1-yTH" firstAttribute="top" secondItem="cw9-dI-qJ0" secondAttribute="bottom" constant="16" id="Sfv-s3-PtL"/>
                             <constraint firstItem="b2U-8w-DwR" firstAttribute="top" secondItem="6L8-Ac-O7q" secondAttribute="bottom" constant="8" id="V3n-iN-63j"/>
@@ -101,6 +155,7 @@
                             <constraint firstItem="hvl-x5-OeY" firstAttribute="top" secondItem="kCi-Wm-Uk5" secondAttribute="bottom" constant="8" id="cWO-NN-9Ke"/>
                             <constraint firstItem="hnD-gs-CyC" firstAttribute="top" secondItem="hvl-x5-OeY" secondAttribute="bottom" constant="8" id="ha1-pS-44v"/>
                             <constraint firstItem="zB4-lQ-vCT" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="hfK-yV-dJP"/>
+                            <constraint firstItem="uZv-uu-4o9" firstAttribute="top" secondItem="zB4-lQ-vCT" secondAttribute="bottom" constant="32" id="kGe-Yt-ggX"/>
                             <constraint firstItem="cw9-dI-qJ0" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="okW-rA-Dsw"/>
                             <constraint firstItem="hnD-gs-CyC" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="p8A-Ju-8jZ"/>
                             <constraint firstItem="hvl-x5-OeY" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="tVX-Gz-hOk"/>
@@ -110,8 +165,12 @@
                     </view>
                     <navigationItem key="navigationItem" id="p3h-w3-DOm"/>
                     <connections>
+                        <outlet property="decButton" destination="tBz-tK-N4z" id="fjp-sz-zyn"/>
                         <outlet property="firstPresentWithNCButton" destination="b2U-8w-DwR" id="40G-GS-4if"/>
                         <outlet property="firstPushVCButton" destination="kCi-Wm-Uk5" id="MA5-Cv-MY7"/>
+                        <outlet property="incButon" destination="zo0-cK-w7q" id="i9B-QO-mSi"/>
+                        <outlet property="numberOfPeopleInput" destination="qiD-aK-VCZ" id="Uc4-L0-B1i"/>
+                        <outlet property="numberOfPeopleLabel" destination="LTE-G5-pXz" id="KKy-b4-MSM"/>
                         <outlet property="presentWithNCLabel" destination="6L8-Ac-O7q" id="dHT-F0-GNX"/>
                         <outlet property="pushVCLabel" destination="6oW-J1-yTH" id="T6S-9Y-Hn2"/>
                         <outlet property="secondPresentWithNCButton" destination="ITy-Kd-mrj" id="KAA-Be-uCp"/>

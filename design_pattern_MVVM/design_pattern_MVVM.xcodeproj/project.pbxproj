@@ -103,9 +103,9 @@
 		0585B5C92C2F068B0093F9C2 /* Main */ = {
 			isa = PBXGroup;
 			children = (
-				055B8BDD2C31F33B0068D6F7 /* MainViewModel.swift */,
 				0585B5BA2C2F062D0093F9C2 /* MainViewController.swift */,
 				0585B5CB2C2F06B10093F9C2 /* MainViewControllerModel.swift */,
+				055B8BDD2C31F33B0068D6F7 /* MainViewModel.swift */,
 			);
 			path = Main;
 			sourceTree = "<group>";

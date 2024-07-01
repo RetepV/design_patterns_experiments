@@ -6,7 +6,10 @@
 //
 
 
-struct MainViewModel {
+class MainViewModel {
+    
+    // MARK: - Constants
+    
     let title = "MainViewController"
     
     let titleLabel = "Main View"
@@ -20,4 +23,8 @@ struct MainViewModel {
     let firstPresentWithNCButtonLabel = "First ViewController"
     let secondPresentWithNCButtonLabel = "Second ViewController"
     let thirdPresentWithNCButtonLabel = "Third ViewController"
+    
+    // MARK: - State
+    
+    var numberOfPeople: Int = 10    
 }

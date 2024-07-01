@@ -18,6 +18,10 @@ protocol MainViewControllerModelProtocol {
     func firstPresentWithNCButtonTapped()
     func secondPresentWithNCButtonTapped()
     func thirdPresentWithNCButtonTapped()
+    
+    func decButtonTapped()
+    func incButtonTapped()
+    func updateNumberOfPeople(_ number: Int)
 }
 
 class MainViewControllerModel: MainViewControllerModelProtocol {
@@ -40,12 +44,17 @@ class MainViewControllerModel: MainViewControllerModelProtocol {
 
         case pushViewController(UIViewController)
         case presentViewController(UIViewController)
+        
+        case numberOfPeopleLabel(String)
+        case numberOfPeopleInput(String)
     }
     
     // MARK: - Private
     
     private let model = MainViewModel()
     private var viewUpdate: ((MainViewControllerModel.ViewUpdate)->())!
+    
+    private var numberOfPeople: Int = 10
     
     // MARK: - Lifecyle
     
@@ -86,6 +95,27 @@ class MainViewControllerModel: MainViewControllerModelProtocol {
         viewUpdate(.presentViewController(navigationController))
     }
     
+    func decButtonTapped() {
+        if numberOfPeople > 0 {
+            numberOfPeople -= 1
+        }
+        viewUpdate(.numberOfPeopleLabel("People: \(numberOfPeople)"))
+        viewUpdate(.numberOfPeopleInput("\(numberOfPeople)"))
+    }
+    
+    func incButtonTapped() {
+        if numberOfPeople < 100 {
+            numberOfPeople += 1
+        }
+        viewUpdate(.numberOfPeopleLabel("People: \(numberOfPeople)"))
+        viewUpdate(.numberOfPeopleInput("\(numberOfPeople)"))
+    }
+    
+    func updateNumberOfPeople(_ number: Int) {
+        numberOfPeople = number
+        viewUpdate(.numberOfPeopleLabel("People: \(numberOfPeople)"))
+    }
+    
     private func setupInitialViewItems() {
         
         viewUpdate(.title(model.title))
@@ -101,5 +131,8 @@ class MainViewControllerModel: MainViewControllerModelProtocol {
         viewUpdate(.firstPresentWithNCButtonLabel(model.firstPresentWithNCButtonLabel))
         viewUpdate(.secondPresentWithNCButtonLabel(model.secondPresentWithNCButtonLabel))
         viewUpdate(.thirdPresentWithNCButtonLabel(model.thirdPresentWithNCButtonLabel))
+        
+        viewUpdate(.numberOfPeopleLabel("People: \(numberOfPeople)"))
+        viewUpdate(.numberOfPeopleInput("\(numberOfPeople)"))
     }
 }
